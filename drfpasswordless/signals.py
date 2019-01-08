@@ -47,7 +47,7 @@ def update_alias_verification(sender, instance, **kwargs):
     """
     if isinstance(instance, User):
 
-        if instance.id:
+        if instance.uuid:
 
             if api_settings.PASSWORDLESS_USER_MARK_EMAIL_VERIFIED is True:
                 """
